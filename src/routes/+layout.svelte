@@ -48,6 +48,9 @@
         top: calc(50vh - var(--perfect-rad)/2);
 
         border-radius: 50%;
+
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     .ani_cont > div > div {
@@ -69,8 +72,7 @@
 
     .cr1 {
         animation-name: mv1;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+        animation-duration: 1s;
     }
     @keyframes mv1 {
         0% {
@@ -86,8 +88,7 @@
 
     .cr2 {
         animation-name: mv2;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
+        animation-duration: 3s;
     }
     @keyframes mv2 {
         0% {
@@ -103,8 +104,7 @@
 
     .cr3 {
         animation-name: mv3;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+        animation-duration: 5s;
     }
     @keyframes mv3 {
         0% {
@@ -120,8 +120,7 @@
 
     .cr4 {
         animation-name: mv4;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
+        animation-duration: 7s;
     }
     @keyframes mv4 {
         0% {
@@ -137,8 +136,7 @@
 
     .cr5 {
         animation-name: mv5;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
+        animation-duration: 11s;
     }
     @keyframes mv5 {
         0% {
@@ -154,8 +152,7 @@
 
     .cr6 {
         animation-name: mv6;
-        animation-duration: 11s;
-        animation-iteration-count: infinite;
+        animation-duration: 13s;
     }
     @keyframes mv6 {
         0% {
