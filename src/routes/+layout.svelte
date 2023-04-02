@@ -47,7 +47,6 @@
 
             height: 30vh;
             width: 30vh;
-
         }
         33% {
             border-top-right-radius: 70%;
@@ -57,7 +56,6 @@
 
             height: 21vh;
             width: 21vh;
-
         }
         100% {
             border-top-right-radius: 20%;   
@@ -67,7 +65,6 @@
 
             height: 30vh;
             width: 30vh;
-
         }
     }
 </style>
