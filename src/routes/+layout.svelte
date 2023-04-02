@@ -67,102 +67,78 @@
         border-bottom-left-radius: 90%;
         border-bottom-right-radius: 20%;
 
-        background-color: rgba(52, 110, 95, 0.344);
+        filter: blur(2vh);
     }
 
     .cr1 {
         animation-name: mv1;
-        animation-duration: 1s;
+        animation-duration: 3.13s;
+    }
+    .cr1 > div {
+        background-color: rgba(92, 3, 188, 0.511);
     }
     @keyframes mv1 {
-        0% {
-            transform: rotate(0deg);       
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
     }
 
     .cr2 {
         animation-name: mv2;
-        animation-duration: 3s;
+        animation-duration: 4.39s;
+    }
+    .cr2 > div {
+        background-color: rgba(38, 8, 85, 0.425);
     }
     @keyframes mv2 {
-        0% {
-            transform: rotate(0deg);       
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% {transform: rotate(60deg);}
+        100% {transform: rotate(420deg);}
     }
 
     .cr3 {
         animation-name: mv3;
-        animation-duration: 5s;
+        animation-duration: 5.71s;
+    }
+    .cr3 > div {
+        background-color: rgba(45, 6, 87, 0.481);
     }
     @keyframes mv3 {
-        0% {
-            transform: rotate(0deg);       
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% {transform: rotate(120deg);}
+        100% {transform: rotate(480deg);}
     }
 
     .cr4 {
         animation-name: mv4;
-        animation-duration: 7s;
+        animation-duration: 6.91s;
+    }
+    .cr4 > div {
+        background-color: rgba(64, 5, 113, 0.453);
     }
     @keyframes mv4 {
-        0% {
-            transform: rotate(0deg);       
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% {transform: rotate(180deg);}
+        100% {transform: rotate(540deg);}
     }
 
     .cr5 {
         animation-name: mv5;
-        animation-duration: 11s;
+        animation-duration: 8.29s;
+    }
+    .cr5 > div {
+        background-color: rgba(91, 4, 138, 0.467);
     }
     @keyframes mv5 {
-        0% {
-            transform: rotate(0deg);       
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% {transform: rotate(240deg);}
+        100% {transform: rotate(600deg);}
     }
 
     .cr6 {
         animation-name: mv6;
-        animation-duration: 13s;
+        animation-duration: 9.77s;
+    }
+    .cr6 > div {
+        background-color: rgba(97, 4, 163, 0.451);
     }
     @keyframes mv6 {
-        0% {
-            transform: rotate(0deg);       
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% {transform: rotate(300deg);}
+        100% {transform: rotate(660deg);}
     }
 </style>
