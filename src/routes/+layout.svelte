@@ -78,7 +78,10 @@
         border-bottom-left-radius: 90%;
         border-bottom-right-radius: 20%;
 
-        filter: blur(2vh);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-name: blr1;
     }
 
     /*circles*/
@@ -102,7 +105,6 @@
         animation-timing-function: linear;
         animation-name: rot1;
     }
-    @keyframes rot1 {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}}
 
     /* spread same grp petals */
     .cr1 {transform: rotate(0deg);}
@@ -110,17 +112,27 @@
     .cr3 {transform: rotate(240deg);}
 
 
+    /* spread same grp petals */
+    .cr1 > div {animation-duration: 5s;}
+    .cr2 > div {animation-duration: 11s;}
+    .cr3 > div {animation-duration: 17s;}
+
+
     /* spread different petals */
-    .grp2 {transform: rotate(0deg); animation-duration: 3s;}
-    .grp2 {transform: rotate(60deg); animation-duration: 5s;}
-    .grp3 {transform: rotate(120deg); animation-duration: 7s;}
-    .grp4 {transform: rotate(180deg); animation-duration: 9s;}
-    .grp5 {transform: rotate(240deg); animation-duration: 11s;}
-    .grp6 {transform: rotate(300deg); animation-duration: 13s;}
+    .grp1 {transform: rotate(0deg); animation-duration: 5s;}
+    .grp2 {transform: rotate(60deg); animation-duration: 7s;}
+    .grp3 {transform: rotate(120deg); animation-duration: 11s;}
+    .grp4 {transform: rotate(180deg); animation-duration: 13s;}
+    .grp5 {transform: rotate(240deg); animation-duration: 17s;}
+    .grp6 {transform: rotate(300deg); animation-duration: 23s;}
 
     /* rotation anims */
+    @keyframes rot1 {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}}
+    @keyframes rot2 {0% {transform: rotate(360deg);} 100% {transform: rotate(0deg);}}
+
+    /* blur in-out anims */
+    @keyframes blr1 {0% {filter: blur(0.5vh);} 100% {filter: blur(2.5vh);}}
     
-    /* @keyframes rot2 {0% {transform: rotate(0deg);} 100% {transform: rotate(-360deg);}} */
 
     /* give diff grp petals dif color */
     .grp2 > div > div {background-color: rgba(255, 0, 89, 0.473);}
