@@ -7,6 +7,37 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		<noscript>
+			<div class="block">
+				<h1>this page does not work without javascript</h1>
+				<h3>please enable javascript if your browser supports</h3>
+			</div>
+			<style>
+				* {
+					margin: 0%;
+					border: 0%;
+					padding: 0%;
+				}
+
+				.block {
+					height: 100vh;
+					width: 100vw;
+					background-color: black;
+					font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+					color: antiquewhite;
+
+					z-index: 3;
+					position: absolute;
+
+					text-align: center;
+				}
+
+				.main_cont {
+					z-index: -1;
+					position: absolute;
+				}
+			</style>
+		</noscript>
+		<div class="main_cont" style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

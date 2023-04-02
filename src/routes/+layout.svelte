@@ -4,7 +4,14 @@
 
 
 
-<div class="ani_cont"><div class="cr1"></div></div>
+<div class="ani_cont">
+    <div class="cr1"></div>
+    <div class="cr2"></div>
+    <div class="cr3"></div>
+    <div class="cr4"></div>
+    <div class="cr5"></div>
+    <div class="cr6"></div>
+</div>
 
 
 <slot/>
@@ -12,11 +19,20 @@
 
 
 <style>
+    .ani_cont {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+    }
+
     .cr1 {
+        position: relative;
+        left: 50%;
+        top: 50%;
         animation-name: mv1;
         animation-duration: 3s;
         animation-iteration-count: infinite;
-        /* animation-direction: alternate; */
         background-color: blueviolet;
 
         border-radius: 50%;
