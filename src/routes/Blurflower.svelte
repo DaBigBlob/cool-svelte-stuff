@@ -102,12 +102,12 @@
 
 
     /* spread different petals */
-    .grp1 {transform: rotate(0deg); animation-duration: calc(17s / var(--speed));}
-    .grp2 {transform: rotate(60deg); animation-duration: calc(13s / var(--speed));}
-    .grp3 {transform: rotate(120deg); animation-duration: calc(11s / var(--speed));}
-    .grp4 {transform: rotate(180deg); animation-duration: calc(7s / var(--speed));}
-    .grp5 {transform: rotate(240deg); animation-duration: calc(5s / var(--speed));}
-    .grp6 {transform: rotate(300deg); animation-duration: calc(3s / var(--speed));}
+    .grp1 {transform: rotate(0deg); animation-duration: calc(3s / var(--speed));}
+    .grp2 {transform: rotate(60deg); animation-duration: calc(5s / var(--speed));}
+    .grp3 {transform: rotate(120deg); animation-duration: calc(7s / var(--speed));}
+    .grp4 {transform: rotate(180deg); animation-duration: calc(11s / var(--speed));}
+    .grp5 {transform: rotate(240deg); animation-duration: calc(13s / var(--speed));}
+    .grp6 {transform: rotate(300deg); animation-duration: calc(17s / var(--speed));}
 
     /* give diff grp petals dif color */
     .grp2 > div > div {background-color: rgba(255, 0, 89, 0.473);}
