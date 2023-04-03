@@ -121,8 +121,8 @@
     /* @keyframes rot2 {0% {transform: rotate(360deg);} 100% {transform: rotate(0deg);}} */
 
     /* blur in-out anims */
-    @keyframes blr1 {0% {filter: blur(calc(0.01 * var(--size)));} 50% {filter: blur(calc(0.05 * var(--size)));} 100% {filter: blur(calc(0.08 * var(--size)));}}
-    @keyframes blr2 {0% {filter: blur(calc(0.05 * var(--size)));} 50% {filter: blur(calc(0.08 * var(--size)));} 100% {filter: blur(calc(0.01 * var(--size)));}}
-    @keyframes blr3 {0% {filter: blur(calc(0.08 * var(--size)));} 50% {filter: blur(calc(0.01 * var(--size)));} 100% {filter: blur(calc(0.05 * var(--size)));}}
+    @keyframes blr1 {0% {filter: blur(calc(0.01 * var(--size)));} 50% {filter: blur(calc(0.03 * var(--size)));} 100% {filter: blur(calc(0.08 * var(--size)));}}
+    @keyframes blr2 {0% {filter: blur(calc(0.03 * var(--size)));} 50% {filter: blur(calc(0.08 * var(--size)));} 100% {filter: blur(calc(0.01 * var(--size)));}}
+    @keyframes blr3 {0% {filter: blur(calc(0.08 * var(--size)));} 50% {filter: blur(calc(0.01 * var(--size)));} 100% {filter: blur(calc(0.03 * var(--size)));}}
     
 </style>
