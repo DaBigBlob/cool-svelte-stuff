@@ -69,7 +69,7 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function: linear;
-        animation-duration: 5s;
+        animation-duration: calc(7s / var(--speed));
     }
 
     /*circles*/
