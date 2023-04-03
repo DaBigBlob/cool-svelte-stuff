@@ -48,8 +48,35 @@
 
     /* animation container */
     .ani_cont {
+        max-height: 100%;
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+
+        position: relative;
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    /*circles*/
+    .ani_cont > div > div, .ani_cont > div {
         height: var(--size);
         width: var(--size);
+
+        position: absolute;
+
+        border-radius: 50%;
+    }
+
+    /* group circle */
+    .ani_cont > div {
+        left: calc(50% - var(--size)/2);
+        top: calc(50% - var(--size)/2);
+
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: rot1;
     }
 
     /* petals */
@@ -70,23 +97,6 @@
         animation-direction: alternate;
         animation-timing-function: linear;
         animation-duration: calc(7s / var(--speed));
-    }
-
-    /*circles*/
-    .ani_cont > div > div, .ani_cont > div {
-        height: var(--size);
-        width: var(--size);
-
-        position: absolute;
-
-        border-radius: 50%;
-    }
-
-    /* group circle */
-    .ani_cont > div {
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-name: rot1;
     }
 
     /* spread same grp petals */

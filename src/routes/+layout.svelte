@@ -3,30 +3,38 @@
     import Blurflower from './Blurflower.svelte';
 </script>
 
-<div class="bff"><Blurflower size='min(100vw, 100vh)' speed={0.8}/></div>
+<div class="bff"><Blurflower size='min(100vw, 100vh)' speed={1}/></div>
+<din class="cont"><slot/></din>
 
-<slot/>
 
 <style>
     * {
         margin: 0%;
         border: 0%;
         padding: 0%;
-
-        z-index: -1;
-
-        overflow-y: hidden;
-        overflow-x: hidden;
     }
 
     .bff {
-        --this-size: min(100vw, 100vh);
-        height: var(--this-size);
-        width: var(--this-size);
+        max-height: 100vh;
+        max-width: 100vw;
+        height: 100vh;
+        width: 100vw;
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        z-index: -1;
 
         position: absolute;
-        left: calc(50vw - var(--this-size)/2);
-        top: calc(50vh - var(--this-size)/2);
+        top: 0%;
+        left: 0%;
+    }
+
+    /* .cont {
 
     }
+
+    @media only screen and (max-width: 1056px) {
+
+    } */
 </style>
