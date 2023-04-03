@@ -42,14 +42,14 @@
         margin: 0%;
         border: 0%;
         padding: 0%;
+
+        z-index: inherit;
     }
 
     /* animation container */
     .ani_cont {
         height: var(--size);
         width: var(--size);
-        z-index: -1;
-        overflow-y: hidden;
     }
 
     /* petals */
