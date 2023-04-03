@@ -1,7 +1,12 @@
-<h1>Lets kiss at the mental hospotal.</h1>
+<script>
+    import Blurflower from './Blurflower.svelte';
+</script>
+
+<p>Lets kiss at the mental hospotal.</p>
+<!-- <Blurflower/> -->
 
 <style>
-    h1 {
-        color: black;
+    * {
+        color:antiquewhite;
     }
 </style>
