@@ -1,6 +1,6 @@
 <script>
     export let size = '500px';
-    export let speed = 1;
+    export let speed = 2;
 </script>
 
 <div class="ani_cont" style="--size: {size}; --speed: {speed};">
@@ -124,7 +124,7 @@
     .grp3 > div > div {background-color: rgba(149, 0, 255, 0.503);}
     .grp4 > div > div {background-color: rgba(180, 230, 0, 0.486);}
     .grp5 > div > div {background-color: rgba(15, 255, 219, 0.457);}
-    .grp6 > div > div {background-color: rgba(255, 140, 0, 0.47);}
+    .grp6 > div > div {background-color: rgba(246, 255, 0, 0.47);}
 
     /* rotation anims */
     @keyframes rot1 {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}}
