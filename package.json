@@ -8,7 +8,9 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "clean": "rm -rf ./.svelte-kit",
+    "deploy": "npm run clean && npm run build && wrangler pages deploy ./.svelte-kit/cloudflare --env=production --branch=production"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230321.0",

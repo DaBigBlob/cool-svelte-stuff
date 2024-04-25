@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './styles.css';
-    import Blurflower from './Blurflower.svelte';
+    import Blurflower from '../components/Blurflower.svelte';
 </script>
 
 <div class="bff"><Blurflower size='min(100vw, 100vh)' speed={1}/></div>
